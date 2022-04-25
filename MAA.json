@@ -1,0 +1,130 @@
+{
+    "goals": [
+        {
+            "name": "MAA_Startb",
+            "title": "",
+            "text": "The year is 8457, a massive solar flare has disrupted the electronics of the islands and there is no more power.",
+            "quickText": "",
+            "nextGoal": "MAA_Startc",
+            "subGoals": [],
+            "planning": []
+        },
+        {
+            "name": "MAA_Startc",
+            "title": "",
+            "text": "The year is 8457, a massive solar flare has disrupted the electronics of the islands and there is no more power.",
+            "quickText": "",
+            "nextGoal": "MAA_Start_1",
+            "subGoals": [],
+            "planning": []
+        },
+        {
+            "name": "MAA_Start_1",
+            "title": "",
+            "text": "Your citizens have been forced to resort to more... magical means of production",
+            "quickText": "",
+            "nextGoal": "MAA_Start_2",
+            "subGoals": [],
+            "planning": []
+        },
+        {
+            "name": "MAA_Start_2",
+            "title": "",
+            "text": "Your current goal is to find what is causing the series of solar flares in order to identify the source.",
+            "quickText": "Find the source of the solar flares",
+            "nextGoal": "MAA_Story_1",
+            "subGoals": [
+                {
+                    "type": "ClickBuilding",
+                    "permanentToClickClass": "OverfluxOrb"
+                }
+            ],
+            "planning": []
+        },
+        {
+            "name": "MAA_Story_1",
+            "title": "",
+            "text":"There is definitely something strange about that orb, but our citizens can't seem to figure it out...",
+            "quickText": "",
+            "nextGoal": "MAA_Story_2",
+            "subGoals": [],
+            "planning": []
+        },
+        {
+            "name": "MAA_Story_2",
+            "title": "",
+            "text": "Perhaps we should train some citizens in our current knowledge of magic in order to further our understanding of this orb",
+            "quickText": "Build a Research Center",
+            "nextGoal": "MAA_Story_3",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "ResearchCenter",
+                    "amount": 1
+                }
+            ],
+            "planning": [],
+            "unlocks": [
+                "ResearchCenter"
+            ]
+        },
+        {
+            "name": "MAA_Story_3",
+            "title": "",
+            "text": "The Research Center has been built, but we have no place to store our findings! It would be extremely helpful if we had a place where everyday citizens could study the researchers' findings.",
+            "quickText": "",
+            "nextGoal": "MAA_Story_4",
+            "subGoals": [
+                {
+                    "type": "BuildPermanents",
+                    "permanentToBuildClass": "TheArchives",
+                    "amount": 1
+                }
+            ],
+            "planning": [],
+            "unlocks": [
+                "TheArchives"
+            ]
+        },
+        {
+            "name": "MAA_Story_4",
+            "title": "",
+            "text": "",
+            "quickText": "",
+            "nextGoal": "",
+            "subGoals": [],
+            "planning": []
+        }
+    ],
+    "startGoal": "MAA_Startb",
+    "lockAllPermanents": true,
+    "worlds": [
+        {
+            "rect": {
+                "x": 0,
+                "y": 160,
+                "width": 1000,
+                "height": 80
+            },
+            "seed": 2000,
+            "worldResources": [
+            ],
+            "buildingStacks": [
+                { "position": 2, "classNames": ["OverfluxOrb"] }
+            ],
+            "citizens": [
+                { "amount": 3, "ageRangeMin": 20, "ageRangeMax": 25, "minX": 60, "maxX": 80 }
+            ]
+        }
+    ],
+    "initialMaterials": {
+        "food": 100,
+        "stone": 20,
+        "wood": 20,
+        "knowledge": 10,
+        "machineParts": 0,
+        "refinedMetal": 0,
+        "computerChips": 0
+    },
+    "viewYFromBottom": 270
+}
