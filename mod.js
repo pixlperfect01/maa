@@ -164,3 +164,22 @@ ModTools.makeBuilding('OverfluxOrb', (superClass) => {  return {
     this.currentEvent = queue.readByte();
     this.currentEvent.duration = queue.readFloat();
 }, Building);
+
+
+
+
+ModTools.makeBuilding("ResearchCenter", (superClass) => {
+    
+}, "spr_potion_brewery", (queue) => {
+    
+}, (queue) => {
+    
+}, buildings_Work);
+
+ModTools.makeBuilding("TheArchives", (superClass) => {
+    
+}, "spr_archives", (queue) => {
+    
+}, (queue) => {
+    
+}, Building);
